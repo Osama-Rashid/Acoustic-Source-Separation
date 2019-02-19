@@ -25,8 +25,8 @@
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
   <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
   <!--<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>-->
   <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
     <!--<div class="w3-dropdown-hover w3-hide-small">
@@ -42,8 +42,8 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
     <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     <a href="#" class="w3-bar-item w3-button">Search</a>
   </div>
@@ -70,6 +70,104 @@
       <p>Modal footer</p>
     </footer>
   </div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Our Work</h2>
+<p>We used deep learning to implement a solution of the Acoustic Source Separation Problem.
+The solution is based on the deep clustering model introduced by <a href="https://arxiv.org/abs/1508.04306" target="_blank"><i>John Et al</i></a>. The model uses BLSTM layers to learn embeddings from the input mixed spectrogram in such a way that embeddings of the same speaker are close to each other while those of different speakers are far apart. Model performs quite well as compared to other methods of source separation as can be seen by the samples provided.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
+  <div class="w3-container">
+  <h3>Sample 1</h3>
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./bssc1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="SEN_bssc1_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="SEN_bssc1_2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio> 
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/lights.jpg" alt="Lights" style="width:100%">-->
+  <div class="w3-container">
+  <h3>Sample 2</h3>
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="cafe.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="SEN_cafe_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="SEN_cafe_2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">-->
+  <div class="w3-container">
+  <h3>Sample 3</h3>
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="Mix_out_SEN_1_3500.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="Mix_out_SEN_2_3500.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
 </div>
 
 <!-- Team Container -->
@@ -104,59 +202,6 @@
 </div>
 
 </div>
-</div>
-
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
-<div class="w3-quarter">
-<h2>Our Work</h2>
-<p>We used deep learning to implement a solution of the Acoustic Source Separation Problem.
-The solution is based on the deep clustering model introduced by <a href="https://arxiv.org/abs/1508.04306" target="_blank"><i>John Et al</i></a>. The model uses BLSTM layers to learn embeddings from the input mixed spectrogram in such a way that embeddings of the same speaker are close to each other while those of different speakers are far apart. Model performs quite well as compared to other methods of source separation as can be seen by the samples provided.</p>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
-  <div class="w3-container">
-  <h3>Sample 1</h3>
-  <!--<h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>-->
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <!--<img src="/w3images/lights.jpg" alt="Lights" style="width:100%">-->
-  <div class="w3-container">
-  <h3>Sample 2</h3>
-  <!--<h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>-->
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <!--<img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">-->
-  <div class="w3-container">
-  <h3>Sample 3</h3>
-  <!--<h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>-->
-  </div>
-  </div>
-</div>
-
 </div>
 
 <!-- Container -->
@@ -238,7 +283,7 @@ The solution is based on the deep clustering model introduced by <a href="https:
       <p>Swing by for a cup of coffee, or whatever.</p>-->
       <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Lahore, Pakistan</p>
       <!--<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>-->
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  usman@spectramagazine.org</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  usmananwar391@gmail.com</p>
       <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  osamarashid1997@gmail.com</p>
     </div>
     <!--<div class="w3-col m7">
